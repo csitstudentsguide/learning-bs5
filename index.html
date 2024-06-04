@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>BS 5 Tutorial</title>
     <style>
         section {
@@ -16,6 +17,7 @@
     <!-- Navbar starts -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom border-body" data-bs-theme="light">
         <div class="container">
+            <i class="bi bi-laptop mx-2"></i>
             <a href="#intro" class="navbar-brand">Computer Center - I</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,7 +86,7 @@
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card">
                         <div class="card-body text-center py-4">
-                            <h4 class="card-title">Desktops</h4>
+                            <h4 class="card-title"> <i class="bi bi-pc-display-horizontal mx-2"></i> Desktops</h4>                             
                             <p class="lead card-subtitle">high end desktops</p>
                             <p class="display-6 mt-4 text-primary">Hp ProOne 600 AIO</p>
                             <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -95,7 +97,7 @@
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card">
                         <div class="card-body text-center py-4">
-                            <h4 class="card-title">Smart Board</h4>
+                            <h4 class="card-title"> <i class="bi bi-tv mx-2"></i> Smart Board</h4>
                             <p class="lead card-subtitle">high end touchscreen smartboard</p>
                             <p class="display-6 mt-4 text-primary">Senses Smart Board</p>
                             <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -106,7 +108,7 @@
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card">
                         <div class="card-body text-center py-4">
-                            <h4 class="card-title">Networking</h4>
+                            <h4 class="card-title"> <i class="bi bi-router mx-2"></i> Networking</h4>
                             <p class="lead card-subtitle">high speed networks</p>
                             <p class="display-6 mt-4 text-primary">Cisco Network Devices</p>
                             <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -123,51 +125,56 @@
     
     <!-- Lab features section starts -->
 
-    <!-- Subjects taught section starts -->
-    <section id="lab-subjects" class="mt-5">
-        <div class="container-lg justify-content-center align-items-center">
+    <!-- Subjects taught section starts -->  
+    
+    <section id="lab-subjects">
+        <div class="container-lg">
             <div class="text-center">
                 <h2>Subjects Taught</h2>
                 <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            
-            <div class="row my-5 justify-content-center">
-                <div class="col-10">
-                    <div class="accordion" id="accordionExample">
+
+            <div class="row my-2 g-5 justify-content-center">
+                <div class="col-md-5 d-none d-md-block">
+                    <img class="img-fluid" src="/assets/computer-lab.jpg" alt="computer lab">
+                </div>
+                <div class="col-md-5">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Programming for Problem Solving
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <i class="bi bi-book mx-2"></i>
+                                Programming for Problem Solving
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                              <strong>The first programming subject in your IT career.</strong> This subject emphasises on building problem solving skills among students. And to solve real world problems, we use the the old and best programming language of decades, which is <strong>C++ Programming Language.</strong> 
+                                <strong>The first programming subject in your IT career.</strong> This subject emphasises on building problem solving skills among students. And to solve real world problems, we use the the old and best programming language of decades, which is <strong>C++ Programming Language.</strong> 
                             </div>
                           </div>
                         </div>
-
                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <i class="bi bi-book mx-2"></i>
                                 Python Programming
-                              </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <strong>The first programming subject in your IT career.</strong> This subject emphasises on building problem solving skills among students. And to solve real world problems, we use the the old and best programming language of decades, which is <strong>C++ Programming Language.</strong> 
-                              </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">                                
+                                <strong>This is the programming language of AI, ML and Data Science.</strong> This is the simple, high level and modern programming language. With Python programming language you can start your journey in AIML and Data Science.</strong> 
                             </div>
                           </div>
+                        </div>               
                     </div>
-                </div> 
-            </div>       
+                </div>
+            </div>
         </div>
-    </section>    
-    
+    </section>
 
     <!-- Subjects taught section ends -->
 
+   
 
 
 
