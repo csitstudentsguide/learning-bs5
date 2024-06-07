@@ -17,9 +17,13 @@
     <!-- Navbar starts -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom border-body" data-bs-theme="light">
         <div class="container">
-            <i class="bi bi-laptop mx-2"></i>
-            <a href="#intro" class="navbar-brand">Computer Center - I</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="#intro" class="navbar-brand">
+                <i class="bi bi-laptop mx-2"></i>
+                Computer Center - I
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
@@ -45,31 +49,56 @@
                     <li class="nav-item d-lg-none">
                         <a class="nav-link" href="#quiz">Take Quiz</a>
                     </li>
-                   
-                    
+
+
                 </ul>
             </div>
         </div>
-        
+
     </nav>
-    <!-- Navbar ends-->    
+    <!-- Navbar ends-->
 
     <!-- Intro section start -->
-    <section id="intro">        
+    <section id="intro">
         <div class="container-lg">
             <div class="row g-4 justify-content-center align-items-center">
                 <div class="col-md-5 text-center text-md-start">
                     <h1>
-                        <div class="display-4">Computer <br> Center - I</div>                        
+                        <div class="display-4">Computer <br> Center - I</div>
                         <div class="lead my-4 text-muted">First Step in your IT Career</div>
                     </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, nobis.</p>
-                    <a href="#cc-1" class="btn btn-secondary btn-lg">Know More</a>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+                        nobis.</p>
+                    <a href="#cc-1" class="btn btn-secondary btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">See All Labs</a>
                 </div>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header mt-2">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Lab Listing ...</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                      <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                          All labs
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Programming Lab - I</a></li>
+                          <li><a class="dropdown-item" href="#">Programming Lab - II</a></li>
+                          <li><a class="dropdown-item" href="#">Digital Signal Processing Lab</a></li>
+                          <li><a class="dropdown-item" href="#">Software Engineering Lab</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                     <img class="img-fluid" src="/assets/computer-lab.jpg" alt="computer lab">
                 </div>
             </div>
+            
         </div>
     </section>
     <!-- Intro section end -->
@@ -86,12 +115,13 @@
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card">
                         <div class="card-body text-center py-4">
-                            <h4 class="card-title"> <i class="bi bi-pc-display-horizontal mx-2"></i> Desktops</h4>                             
+                            <h4 class="card-title"> <i class="bi bi-pc-display-horizontal mx-2"></i> Desktops</h4>
                             <p class="lead card-subtitle">high end desktops</p>
                             <p class="display-6 mt-4 text-primary">Hp ProOne 600 AIO</p>
-                            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="col-8 col-lg-4 col-xl-3">
@@ -100,9 +130,10 @@
                             <h4 class="card-title"> <i class="bi bi-tv mx-2"></i> Smart Board</h4>
                             <p class="lead card-subtitle">high end touchscreen smartboard</p>
                             <p class="display-6 mt-4 text-primary">Senses Smart Board</p>
-                            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="col-8 col-lg-4 col-xl-3">
@@ -111,22 +142,23 @@
                             <h4 class="card-title"> <i class="bi bi-router mx-2"></i> Networking</h4>
                             <p class="lead card-subtitle">high speed networks</p>
                             <p class="display-6 mt-4 text-primary">Cisco Network Devices</p>
-                            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-                
+
             </div>
 
         </div>
 
 
     </section>
-    
+
     <!-- Lab features section starts -->
 
-    <!-- Subjects taught section starts -->  
-    
+    <!-- Subjects taught section starts -->
+
     <section id="lab-subjects">
         <div class="container-lg">
             <div class="text-center">
@@ -141,31 +173,42 @@
                 <div class="col-md-5">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                <i class="bi bi-book mx-2"></i>
-                                Programming for Problem Solving
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <strong>The first programming subject in your IT career.</strong> This subject emphasises on building problem solving skills among students. And to solve real world problems, we use the the old and best programming language of decades, which is <strong>C++ Programming Language.</strong> 
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <i class="bi bi-book mx-2"></i>
+                                    Programming for Problem Solving
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <strong>The first programming subject in your IT career.</strong> This subject
+                                    emphasises on building problem solving skills among students. And to solve real
+                                    world problems, we use the the old and best programming language of decades, which
+                                    is <strong>C++ Programming Language.</strong>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                <i class="bi bi-book mx-2"></i>
-                                Python Programming
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">                                
-                                <strong>This is the programming language of AI, ML and Data Science.</strong> This is the simple, high level and modern programming language. With Python programming language you can start your journey in AIML and Data Science.</strong> 
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <i class="bi bi-book mx-2"></i>
+                                    Python Programming
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <strong>This is the programming language of AI, ML and Data Science.</strong> This
+                                    is the simple, high level and modern programming language. With Python programming
+                                    language you can start your journey in AIML and Data Science.</strong>
+                                </div>
                             </div>
-                          </div>
-                        </div>               
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,8 +217,103 @@
 
     <!-- Subjects taught section ends -->
 
-   
+    <!-- Contact form starts -->
+    <section id="get-in-touch" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get In Touch</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
 
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-6">
+                    <form class="form-control p-4">
+                        <label class="form-label mt-2 mb-2" for="name">Name:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-file-person"></i></span>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="e.g. John Doe">
+                        </div>
+
+                        <label class="form-label mt-2 mb-2" for="email">Email:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                            <input class="form-control" type="email" id="email" name="email"
+                                placeholder="e.g. john.doe@example.com">
+                        </div>
+
+                        <label for="subject" class="form-label mt-2 mb-2">What is your question about?</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-chat-left-text"></i></span>
+                            <select class="form-select" name="subject" id="subject">
+                                <option value="lab booking" selected>Lab booking</option>
+                                <option value="lab experiment">Lab experiment</option>
+                                <option value="Objects missing">Objects missing</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-4 mb-2 form-floating">
+                            <textarea name="query" id="query" class="form-control" style="height: 140px;"></textarea>
+                            <label for="query" class="text-muted">Type your query here ...</label>
+                        </div>
+
+
+                        <div class="mt-4 mb-2 text-center">
+                            <button class="btn btn-outline-secondary form-control mt-2 mb-2 px-5"
+                                type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact form ends -->
+
+    <!-- Subscriptions Modal Starts -->
+    <section id="subscribe">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Subscribe Our Newsletter</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Button trigger modal -->
+                    <div class="text-center mt-2">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get subscribed 
+                        </button>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Newsletter Subscription</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <label class="form-label" for="newsletter" >Email:</label>
+                                    <input class="form-control" type="email" name="newsletter" id="newsletter">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Subscriptions Modal Ends -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
